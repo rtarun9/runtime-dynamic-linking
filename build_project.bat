@@ -6,7 +6,7 @@ REM The first script argument can be : (a) open_debugger or (b) empty (for compi
 
 mkdir build
 pushd build
-cl /Zi ../src/main.c /link /SUBSYSTEM:windows user32.lib 
+cl /P /Zi ../src/main.c  /link /SUBSYSTEM:windows user32.lib 
 popd
 
 IF %1.==. GOTO end
